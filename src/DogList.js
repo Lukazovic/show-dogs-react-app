@@ -6,14 +6,15 @@ export default class DogList extends Component {
   render() {
     return (
       <div className="DogList">
-        <h1 className="display-3 text-center">Dog List!</h1>
+        <h1 className="display-3 text-center mt-3 mb-5">Dog List!</h1>
         <div className="row">
           {this.props.dogs.map(dog => (
             <div className="Dog col-lg-4 text-center">
-              <img src={dog.src} alt={dog.name} />
-              <h3>
-                {" "}
-                <Link to={`/dogs/${dog.name}`}>{dog.name}</Link>
+              <h3 className="mt-3">
+                <Link to={`/dogs/${dog.name}`}>
+                  <img src={dog.src} alt={dog.name} />
+                  <h1 className="underline">{dog.name}</h1>
+                </Link>
               </h3>
             </div>
           ))}
