@@ -1,0 +1,10 @@
+.GithubLink {
+  padding: 2px 7px;
+  border-radius: 10px;
+  border: 0.5px ridge rgba(0, 0, 0, 0.562);
+}
+
+.GithubLink:hover {
+  border: none;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.774);
+}
